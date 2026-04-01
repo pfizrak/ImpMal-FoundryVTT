@@ -61,7 +61,7 @@ jobs:
       - name: Sync with upstream
         run: |
           git remote add upstream https://github.com/moo-man/ImpMal-FoundryVTT.git || true
-          git fetch upstream --tags
+          git fetch upstream --tags --force
           git reset --hard "refs/tags/${{ needs.check.outputs.tag }}"
 
       - name: Apply patches
