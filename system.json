@@ -3,12 +3,12 @@
   "title": "Warhammer 40,000: Imperium Maledictum",
   "description": "In the grim darkness of the 41st millennium, players take on the role of citizens of the Imperium in service to a powerful patron, drawing them into tales focused on intrigue, betrayal, and conspiracy",
   "version": "3.4.0",
-  "compatibility" : {
-    "minimum" : 13,
-    "verified" : 14,
-    "maximum" : 14    
+  "compatibility": {
+    "minimum": 13,
+    "verified": 14,
+    "maximum": 14
   },
-  "authors" : [
+  "authors": [
     {
       "name": "Moo Man",
       "email": "russellt@cubicle7games.com",
@@ -16,9 +16,13 @@
       "reddit": "u/mooman10"
     }
   ],
-  "scripts": ["./impmal.js"],
+  "scripts": [
+    "./impmal.js"
+  ],
   "esmodules": [],
-  "styles": ["./impmal.css"],
+  "styles": [
+    "./impmal.css"
+  ],
   "packs": [],
   "languages": [
     {
@@ -33,23 +37,29 @@
       "url": ""
     }
   ],
-  "flags" : {
-      "hotReload": { 
-        "extensions": ["css", "hbs", "json"]
-      }
+  "flags": {
+    "hotReload": {
+      "extensions": [
+        "css",
+        "hbs",
+        "json"
+      ]
+    }
   },
   "relationships": {
-    "requires": [{
-      "id": "warhammer-lib",
-      "type": "module",
-      "manifest": "https://raw.githubusercontent.com/moo-man/WarhammerLibrary-FVTT/2.10.0/module.json",
-      "compatibility": {
-        "minimum" : "2.10.0",
-        "verified": "3.0.2"
+    "requires": [
+      {
+        "id": "warhammer-lib",
+        "type": "module",
+        "manifest": "https://github.com/pfizrak/WarhammerLibrary-FVTT/releases/latest/download/module.json",
+        "compatibility": {
+          "minimum": "2.10.0",
+          "verified": "3.0.2"
+        }
       }
-    }]
+    ]
   },
-  "background" : "modules/impmal-core/assets/images/login.webp",
+  "background": "modules/impmal-core/assets/images/login.webp",
   "initiative": "@combat.initiative + @skills.reflexes.total/100",
   "grid": {
     "distance": 1,
@@ -59,10 +69,9 @@
   },
   "primaryTokenAttribute": null,
   "secondaryTokenAttribute": null,
-  "url": "https://github.com/moo-man/ImpMal-FoundryVTT",
+  "url": "https://github.com/pfizrak/ImpMal-FoundryVTT",
   "socket": true,
-  "manifest": "https://github.com/moo-man/ImpMal-FoundryVTT/releases/latest/download/system.json",
-  "download": "https://github.com/moo-man/ImpMal-FoundryVTT/releases/download/3.4.0/impmal.zip",
+  "manifest": "https://github.com/pfizrak/ImpMal-FoundryVTT/releases/latest/download/system.json",
+  "download": "https://github.com/pfizrak/ImpMal-FoundryVTT/releases/download/3.4.0/impmal.zip",
   "license": "LICENSE.txt"
 }
-
