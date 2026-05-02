@@ -1867,7 +1867,7 @@ const IMPMAL = {
     
     rollClasses : {},
     
-    premiumModules : {
+    moduleRegistry : {
         "impmal" : "Imperium Maledictum System",
         "impmal-core" : "Core Rulebook",
         "impmal-starter-set" : "Starter Set",
